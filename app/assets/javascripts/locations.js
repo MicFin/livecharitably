@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	Charity.list_of_states();
 	Charity.create_divs();
 	Charity.create_ranks();
 	$('#map').hide();
@@ -21,8 +21,7 @@ $(document).ready(function(){
 		$('#average').show();
 		$('#percent').show();
 		event.preventDefault();
-		var age = $( "#age" ).val();
-		var state = $( "#state" ).val();
+		var state = $( "#state-list" ).val();
 		$('#'+state).show();
 		$('#rank-'+state).show();
 		$('#form').hide();

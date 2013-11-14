@@ -9,7 +9,7 @@ var Plotter = {
 
 		// from cdn repo. now in d3 code
 		// heightRange is smaller than h in order to make graph not go to very top
-		var heightRange=400, h = 500, w = 400, dataLength = data.length, barWidth = w/dataLength;
+		var heightRange=450, h = 500, w = 500, dataLength = data.length, barWidth = w/dataLength;
 		svg = d3.select('#graphs')
 			.append('svg')
 			.attr('height',h)
@@ -31,7 +31,7 @@ var Plotter = {
 			.enter()
 			.append('rect')
 			.attr('x', function(d, i){
-				return w/dataLength * i;
+				return (w/dataLength+5)* i;
 			})
 			.attr('y', function(d, i){
 				return h - height(d.avg);

@@ -12,7 +12,7 @@
   <div id="local-div"></div>
 </div>
 
-<div id="map" style="width: 700px; height: 500px;"></div>
+<div id="map"></div>
 
 <div id="graphs"></div>
 <div id="volume-wrapper">
@@ -21,7 +21,7 @@
 
 <div id="top">
   <div id="total">
-    <h2>Top State-Wide Contributions</h2>
+    <h2>Total Contribution</h2>
     <ol id="total-list">
       <li id="total-1"></li>
       <li id="total-2"></li>
@@ -31,7 +31,7 @@
     </ol>
   </div>
   <div id="average">
-    <h2>Top Contributions by Average Household</h2>
+    <h2>Average Household Contribution</h2>
     <ol id="average-list">
       <li id="average-1"></li>
       <li id="average-2"></li>
@@ -41,7 +41,7 @@
     </ul>
   </div>
   <div id="percent">
-    <h2>Top Contributions by Percent of Income</h2>
+    <h2>Contribution as a Percent of Income</h2>
     <ol id="percent-list">
       <li id="percent-1"></li>
       <li id="percent-2"></li>
@@ -52,34 +52,13 @@
   </div>
 </div>
   
-<form id="form" action="">
- <input id="age" type="text" name="age" placeholder="Age"><br>
- <input id="state" type="text" name="state" placeholder="State Initials">
+<form id="form" action="" onsubmit="return(validate());" name="myForm">
 
-  <div>Income Level: <select id="income">
-    <option value="b4">50,000 - 99,999</option>
-    <option value="b56">100,000 - 199,999</option>
-    <option value="b7">200,000 & Up</option>
-    </select>
+  <div>How Charitab.ly is your state Living? 
+   <select id="state-list">
+   </select>
   </div>
 
-  <div>Race: <select id="race">
-    <option value="race0">White</option>
-    <option value="race1">Black</option>
-    <option value="race2">Hispanic</option>
-    <option value="race3">Asian</option>
-    <option value="race4">Other</option>
-    </select>
-  </div>
-
-  <div>Education: <select id="education">
-    <option value="edu0">No High School Diploma</option>
-    <option value="edu1">High School Diploma</option>
-    <option value="edu2">Some College</option>
-    <option value="edu3">Bachelor's Degree</option>
-    <option value="edu4">Post-Grad</option>
-    </select>
-  </div>
   <input id="submit-button" type="submit" value="Submit">
 </form>
 

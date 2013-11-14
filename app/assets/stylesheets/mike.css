@@ -1,0 +1,56 @@
+#graphs{
+	float:right;
+
+}
+
+#map {
+	float:left;
+	margin-left: 50px;
+/*	width: 840px; 
+	height: 600px;*/
+	/* Set rules to fill background */
+  min-height: 600px;
+  min-width: 1000px;
+
+  /* Set up proportionate scaling */
+/*  width: 45%;
+  height: 100%;*/
+
+  /* Set up positioning */
+}
+
+#sidebar{
+	float: left;
+}
+
+#data-div{
+	width: 200px; 
+	height: 400px;
+}
+
+#local-div{
+	width: 200px; 
+	height: 200px;
+}
+
+#top{
+	clear: both;
+	width: 100%;
+	height: 400px;
+}
+
+#total{
+	float: left;
+	margin: auto 1.5em;
+	display: inline-block;
+}
+#average{
+	float: left;
+	margin: auto 1.5em;
+	display: inline-block;
+}
+#percent{
+	float: left;
+	margin: auto 1.5em;
+	display: inline-block;
+}
