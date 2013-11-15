@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+	Charity.list_of_states();
 	Charity.create_divs();
 	Charity.create_ranks();
 	$('#map').hide();
@@ -21,8 +21,7 @@ $(document).ready(function(){
 		$('#average').show();
 		$('#percent').show();
 		event.preventDefault();
-		var age = $( "#age" ).val();
-		var state = $( "#state" ).val();
+		var state = $( "#state-list" ).val();
 		$('#'+state).show();
 		$('#rank-'+state).show();
 		$('#form').hide();
@@ -35,9 +34,11 @@ $(document).ready(function(){
 		'stateHoverStyles': {fill: '#452f8c'},
 
 	  click: function(event, data) {
-	  	$('#clicked-state')
-	  	.text(Charity.retrieve_data(data.name))
-	  	.parent().effect('highlight', {color: '#C7F464'}, 2000);
+	  	Plotter.removeData();
+	  	Charity.add_to_graph(data.name);
+
+	  	// $('#clicked-state')
+	  	// .parent().effect('highlight', {color: '#C7F464'}, 2000);
 		},
 
 		mouseover: function(event, data){

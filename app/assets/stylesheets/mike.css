@@ -1,0 +1,107 @@
+#graphs{
+	float:right;
+
+}
+
+#map {
+	float:left;
+	margin-left: 50px;
+/*	width: 840px; 
+	height: 600px;*/
+	/* Set rules to fill background */
+  min-height: 600px;
+  min-width: 1000px;
+  background-color: #e6ba64;
+
+  /* Set up proportionate scaling */
+/*  width: 45%;
+  height: 100%;*/
+
+  /* Set up positioning */
+}
+
+#sidebar{
+	float: left;
+	padding-left: 20px;
+}
+
+.state-stats{
+	width: 300px; 
+	height: 500px;
+	background-color: rgba(143,125,198,.8);
+	text-align: center;
+	border-color: #4528fc;
+	color: #210f5b;
+
+}
+
+.state-ranks{
+	width: 300px; 
+	height: 500px;
+	background-color: rgba(100,189,189,.8); 
+	text-align: center;
+	border-color: #1f7a7a;
+	color: #006161;
+}
+
+.state-names{
+	color: white;
+}
+
+.state-numbers{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	border-radius: 100px;
+	height: auto;
+	width: 150px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.rank-div{
+	margin-right: auto;
+	margin-left: auto;
+	background-color: white;
+	border-radius: 100px;
+	height: 50px;
+	width: 50px;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.rank-text{
+	padding-top: 12px;
+}
+
+/*#local-div{
+	width: 200px; 
+	height: 200px;
+}*/
+
+#top{
+	clear: both;
+	width: auto;
+	height: 400px;
+	text-align: center;
+}
+
+#total{
+
+	margin: auto 1.5em;
+	display: inline-block;
+}
+
+#average{
+
+	margin: auto 1.5em;
+	display: inline-block;
+}
+
+#percent{
+
+	margin: auto 1.5em;
+	display: inline-block;
+}
