@@ -30,7 +30,7 @@ input {
   border: solid 1px;
   border-radius: 10px;
   background-color:white;
-  color: #17848E;
+  color: white;
 }
 
 form {
@@ -39,7 +39,38 @@ form {
   vertical-align: bottom;
 }
 
+#intro{
+  background-color: #e6ba64;
+  width: 1000px;
+  border-radius: 100px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+#question{
+  padding-top: 50px;
+  color: #2d4989;
+  line-height: -100px;
+  font-size: 100px;
+  margin-bottom: 100px;
+
+}
+
+#submit-button{
+  margin-top: -50px;
+  height: 100px;
+  width: 400px;
+  font-size: 100px;
+  background-color: #2d4989;
+}
+
+#state-list{
+    margin-top: -50px;
+  height: 100px;
+  width: 150px;
+  font-size: 50px;
+}
 
 body {
 

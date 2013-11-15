@@ -1,6 +1,23 @@
-#graphs{
-	float:right;
+#navbar{
+	width: auto;
+	height: 150px;
+	background-color: #2d4989;
+	margin: 20px;
+	text-align: center;
+}
 
+#logo{
+	font-size: 150px;
+	color: white;
+	width: 100%;
+	margin: 0 auto;
+ 	vertical-align: middle;
+ 	line-height: 150px;
+}
+
+#graphs{
+	float:left;
+	margin-left: -150px;
 }
 
 #map {
@@ -23,6 +40,19 @@
 #sidebar{
 	float: left;
 	padding-left: 20px;
+	margin-top: -20px;
+}
+
+#submit-button{
+	height: 100px;
+	width: 400px;
+	font-size: 50px;
+}
+
+#state-list{
+	height: 100px;
+	width: 150px;
+	font-size: 50px;
 }
 
 .state-stats{
@@ -32,12 +62,11 @@
 	text-align: center;
 	border-color: #4528fc;
 	color: #210f5b;
-
 }
 
 .state-ranks{
 	width: 300px; 
-	height: 500px;
+	height: 350px;
 	background-color: rgba(100,189,189,.8); 
 	text-align: center;
 	border-color: #1f7a7a;
@@ -48,7 +77,12 @@
 	color: white;
 }
 
+.state-titles{
+	font-size: 25px;
+}
+
 .state-numbers{
+	margin-top: -10px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: white;
@@ -57,9 +91,26 @@
 	width: 150px;
 	text-align: center;
 	vertical-align: center;
+	font-size: 30px;
+}
+
+#total-contrib{
+	margin-left: 30px;
+	width: 250px;
+}
+
+.averages{
+	margin-top: -10px;
+	font-size: 25px;
+}
+
+.last-averages{
+	margin-top: 0px;
+	font-size: 25px;
 }
 
 .rank-div{
+	margin-top: -10px;
 	margin-right: auto;
 	margin-left: auto;
 	background-color: white;
@@ -74,12 +125,20 @@
 
 .rank-text{
 	padding-top: 12px;
+	font-size: 30px;
 }
 
+.top-rank{
+	margin-top: -30px;
+}
 /*#local-div{
 	width: 200px; 
 	height: 200px;
 }*/
+
+#map-totals{
+	float: left;
+}
 
 #top{
 	clear: both;
@@ -89,19 +148,16 @@
 }
 
 #total{
-
 	margin: auto 1.5em;
 	display: inline-block;
 }
 
 #average{
-
 	margin: auto 1.5em;
 	display: inline-block;
 }
 
 #percent{
-
 	margin: auto 1.5em;
 	display: inline-block;
 }

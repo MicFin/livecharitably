@@ -1,8 +1,5 @@
 <div id="navbar">
-  <div id="logo"></div>
-  <div id="compare"><a href="#map"></a></div>
-  <div id="rank"><a href="#top"></a></div>
-  <div id="give"><a href="#charities"></a></div>
+  <div id="logo">Live Charitab.ly</div>
 </div>
 
 <div id="clicked-state"></div>
@@ -12,56 +9,59 @@
   <div id="local-div"></div>
 </div>
 
-<div id="map"></div>
+
+<div id="map-totals">
+  <div id="map"></div>
+  <div id="top">
+    <div id="total">
+      <h2>Total Contribution</h2>
+      <ol id="total-list">
+        <li id="total-1"></li>
+        <li id="total-2"></li>
+        <li id="total-3"></li>      
+        <li id="total-4"></li>
+        <li id="total-5"></li>
+      </ol>
+    </div>
+    <div id="average">
+      <h2>Average Household Contribution</h2>
+      <ol id="average-list">
+        <li id="average-1"></li>
+        <li id="average-2"></li>
+        <li id="average-3"></li>      
+        <li id="average-4"></li>
+        <li id="average-5"></li>
+      </ul>
+    </div>
+    <div id="percent">
+      <h2>Contribution as a Percent of Income</h2>
+      <ol id="percent-list">
+        <li id="percent-1"></li>
+        <li id="percent-2"></li>
+        <li id="percent-3"></li>      
+        <li id="percent-4"></li>
+        <li id="percent-5"></li>
+      </ol>
+    </div>
+  </div>
+</div>
 
 <div id="graphs"></div>
-<div id="volume-wrapper">
-  <h2 id="current-volume"></h2>
+<div id="graph-title">
+  <h2 id="current-volume">Avg Household Contribution</h2>
 </div>
 
-<div id="top">
-  <div id="total">
-    <h2>Total Contribution</h2>
-    <ol id="total-list">
-      <li id="total-1"></li>
-      <li id="total-2"></li>
-      <li id="total-3"></li>      
-      <li id="total-4"></li>
-      <li id="total-5"></li>
-    </ol>
-  </div>
-  <div id="average">
-    <h2>Average Household Contribution</h2>
-    <ol id="average-list">
-      <li id="average-1"></li>
-      <li id="average-2"></li>
-      <li id="average-3"></li>      
-      <li id="average-4"></li>
-      <li id="average-5"></li>
-    </ul>
-  </div>
-  <div id="percent">
-    <h2>Contribution as a Percent of Income</h2>
-    <ol id="percent-list">
-      <li id="percent-1"></li>
-      <li id="percent-2"></li>
-      <li id="percent-3"></li>      
-      <li id="percent-4"></li>
-      <li id="percent-5"></li>
-    </ol>
-  </div>
+<div id="intro">
+  <form id="form" action="" onsubmit="return(validate());" name="myForm">
+
+    <div id="question">How Charitab.ly </br>is your state Living? </br>
+    </div>
+
+     <select id="state-list">
+     </select>
+    <input id="submit-button" type="submit" value="Submit">
+  </form>
 </div>
-  
-<form id="form" action="" onsubmit="return(validate());" name="myForm">
-
-  <div>How Charitab.ly is your state Living? 
-   <select id="state-list">
-   </select>
-  </div>
-
-  <input id="submit-button" type="submit" value="Submit">
-</form>
-
 
 
 
