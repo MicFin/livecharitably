@@ -6,7 +6,6 @@ var Plotter = {
 	},
 
 	plotData: function(data){
-
 		// from cdn repo. now in d3 code
 		// heightRange is smaller than h in order to make graph not go to very top
 		var heightRange=450, h = 500, w = 500, dataLength = data.length, barWidth = w/dataLength;

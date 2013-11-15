@@ -43,7 +43,7 @@ Charity.add_to_data_hash = function(key_array, value_array){
 // creates data divs for all states
 Charity.create_divs = function(){
   for(var i in Charity.data){
-    $("#data-div").append("<div id=\'"+Charity.data[i].match_name+"\'>"+"<h3>"+Charity.data[i].display_name+"</h3>"+"<h4>State's Total Charitable Contributions:</h4>"+"$"+parseInt(Charity.data[i].tot_contrib).formatMoney(0)+"<h4>Avg Household Contribution:</h4>"+"$"+parseInt(Charity.data[i].em_contrib).formatMoney(0)+"<h4>Avg Percent Household Income:</h4>"+Charity.data[i].pctgiv+"</div>");
+    $("#data-div").append("<div class='state-stats' id=\'"+Charity.data[i].match_name+"\'>"+"<h1><span class='state-names'>"+Charity.data[i].display_name+"</span></h1>"+"<h4>State's Total Charitable Contributions</h4><div class='state-numbers'>"+"$"+parseInt(Charity.data[i].tot_contrib).formatMoney(0)+"</div><h4>Avg Household Contribution</h4><div class='state-numbers'>"+"$"+parseInt(Charity.data[i].em_contrib).formatMoney(0)+"</div><h4>Avg Percent Household Income</h4><div class='state-numbers'>"+Charity.data[i].pctgiv+"</div></div>");
   }
 };
 
@@ -62,7 +62,7 @@ Charity.create_ranks = function(){
   for(var i in Charity.data){
     var pctRank = Charity.data[i].rank_pctgiv.split("|");
     var contrRank = Charity.data[i].rank_em_contrib.split("|");
-    $("#local-div").append("<div id=\'rank-"+Charity.data[i].match_name+"\'>"+"<h3>"+Charity.data[i].display_name+"</h3>"+"<h4>Average Household Contribution:</h4>"+"#"+contrRank[0]+"<h4>Average Percent Household Income:</h4>"+"#"+pctRank[0]+"</div>");
+    $("#local-div").append("<div class='state-ranks' id=\'rank-"+Charity.data[i].match_name+"\'>"+"<h3><span class='state-names'>"+"Nationwide Rank"+"</span></h3>"+"<h4>Average Household Contribution</h4><div class='rank-div'><div class='rank-text'>"+"#"+contrRank[0]+"</div></div><h4>Average Percent Household Income</h4><div class='rank-div'><div class='rank-text'>"+"#"+pctRank[0]+"</div></div></div>");
   }
 };
 
@@ -179,12 +179,12 @@ Charity.add_to_graph = function(state){
     };
   Charity.graph.push(obj);
   Plotter.plotData(Charity.graph);
+  debugger;
 };
 
 // create state drop down form
 Charity.create_state_form = function(states){
   var i =0, max = states.length;
-  debugger;
   for (; i < max;){
     var state = states[i];
     var el = document.createElement("option");
