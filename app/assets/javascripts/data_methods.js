@@ -143,7 +143,6 @@ Charity.create_top_perc = function(){
   Charity.top_perc_list(tot_hash);
 };
 
-
 Charity.top_perc_list = function(tot_hash){
   for(var i in tot_hash){
     switch (Charity.data[i].rank_pctgiv){

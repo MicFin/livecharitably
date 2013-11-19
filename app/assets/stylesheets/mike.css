@@ -55,6 +55,14 @@
 	font-size: 50px;
 }
 
+#graph-label{
+	margin-left: -100px;
+	text-align: center;
+	margin-right: 30px;
+	font-size: 30px;
+	color: #2d4989;
+}
+
 .state-stats{
 	width: 300px; 
 	height: 500px;

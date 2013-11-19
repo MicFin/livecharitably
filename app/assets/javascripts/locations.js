@@ -31,7 +31,6 @@ $(document).ready(function(){
 		$('#form').hide();
 });
 
-
 	$('#map').usmap({
 		'stateStyles': {fill: '#7b91c4'},
 		'stroke-width': 200,
